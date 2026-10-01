@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast - Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="weather-app">
+
+        <header>
+            <div class="logo">☁ SkyCast</div>
+
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Search city...">
+                <button onclick="searchWeather()">🔍</button>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="hero">
+
+                <div class="location">
+                    <span>📍</span>
+                    <h2 id="cityName">Bhopal, India</h2>
+                </div>
+
+                <div class="date" id="date"></div>
+
+                <div class="temperature">
+                    <span id="temperature">28°</span>
+                    <div>
+                        <h3 id="condition">Partly Cloudy</h3>
+                        <p>Feels like <span id="feels">30°</span></p>
+                    </div>
+                </div>
+
+                <div class="weather-icon" id="weatherIcon">
+                    🌤️
+                </div>
+
+            </section>
+
+
+            <section class="details">
+
+                <div class="card">
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <h3 id="humidity">68%</h3>
+                </div>
+
+                <div class="card">
+                    <span>💨</span>
+                    <p>Wind Speed</p>
+                    <h3 id="wind">14 km/h</h3>
+                </div>
+
+                <div class="card">
+                    <span>🌡️</span>
+                    <p>Pressure</p>
+                    <h3 id="pressure">1012 hPa</h3>
+                </div>
+
+                <div class="card">
+                    <span>👁️</span>
+                    <p>Visibility</p>
+                    <h3 id="visibility">10 km</h3>
+                </div>
+
+            </section>
+
+
+            <section class="forecast">
+
+                <h2>5-Day Forecast</h2>
+
+                <div class="forecast-container">
+
+                    <div class="day">
+                        <h4>Fri</h4>
+                        <span>☀️</span>
+                        <h3>30°</h3>
+                        <p>Sunny</p>
+                    </div>
+
+                    <div class="day">
+                        <h4>Sat</h4>
+                        <span>🌤️</span>
+                        <h3>29°</h3>
+                        <p>Cloudy</p>
+                    </div>
+
+                    <div class="day">
+                        <h4>Sun</h4>
+                        <span>🌧️</span>
+                        <h3>26°</h3>
+                        <p>Rainy</p>
+                    </div>
+
+                    <div class="day">
+                        <h4>Mon</h4>
+                        <span>⛈️</span>
+                        <h3>25°</h3>
+                        <p>Storm</p>
+                    </div>
+
+                    <div class="day">
+                        <h4>Tue</h4>
+                        <span>☀️</span>
+                        <h3>31°</h3>
+                        <p>Sunny</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>SkyCast Weather • Powered by JavaScript</p>
+        </footer>
+
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
