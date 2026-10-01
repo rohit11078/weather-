@@ -149,11 +149,6 @@ function getWeatherIcon(weather) {
     }
 }
 
-
-// ================================
-// CAPITALIZE TEXT
-// ================================
-
 function capitalize(text) {
 
     return text
@@ -163,11 +158,6 @@ function capitalize(text) {
         )
         .join(" ");
 }
-
-
-// ================================
-// ENTER KEY SEARCH
-// ================================
 
 document
     .getElementById("cityInput")
